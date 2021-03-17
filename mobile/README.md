@@ -1,8 +1,12 @@
 # area
 
-Mobile application for Area project.
+Mobile application for Area project.  
+
+**Please, note that the app has been tested on Android phone only.**
 
 ## Getting Started
+
+Before starting the app, you must fill in CLIENT_IDs and TENANT_ID inside `lib/constants.dart` file.
 
 This project is a starting point for a Flutter application.
 
