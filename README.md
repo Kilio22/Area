@@ -1,4 +1,4 @@
-# Area_2020
+# Area
 
 
 
@@ -66,8 +66,8 @@ Project mark: **26/28**
 Grade: **A**
 
 ### Made by:  
-- [Kylian Balan](https://github.com/Kilio22)  
-- [Nathan Lecorchet](https://github.com/HeyShafty)  
-- [Ghassane Sebaï](https://github.com/SuperZikoure)  
-- [Rodolphe Dupuis](https://github.com/RodolpheDupuis)    
-- [Eliott Palueau](https://github.com/EliottPal)  
+- [Kylian Balan](https://github.com/Kilio22) - Mobile client developer  
+- [Nathan Lecorchet](https://github.com/HeyShafty) - Back-end developer  
+- [Ghassane Sebaï](https://github.com/SuperZikoure) - Web client developer  
+- [Rodolphe Dupuis](https://github.com/RodolpheDupuis) - Back-end developer    
+- [Eliott Palueau](https://github.com/EliottPal) - Web client developer  
