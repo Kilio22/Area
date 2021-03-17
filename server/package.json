@@ -1,0 +1,56 @@
+{
+  "name": "b-yep-500-ren-5-1-area-eliott.palueau",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EpitechIT2020/B-YEP-500-REN-5-1-area-eliott.palueau.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EpitechIT2020/B-YEP-500-REN-5-1-area-eliott.palueau/issues"
+  },
+  "homepage": "https://github.com/EpitechIT2020/B-YEP-500-REN-5-1-area-eliott.palueau#readme",
+  "dependencies": {
+    "@azure/msal-node": "^1.0.0-beta.4",
+    "@microsoft/microsoft-graph-client": "^2.2.1",
+    "@octokit/graphql": "^4.6.0",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "discord.js": "^12.5.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "googleapis": "^67.1.0",
+    "got": "^11.8.1",
+    "isomorphic-fetch": "^3.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.11.12",
+    "morgan": "^1.10.0",
+    "oauth": "^0.9.15",
+    "oauth-1.0a": "^2.2.6",
+    "passport": "^0.4.1",
+    "passport-discord": "^0.1.4",
+    "passport-github2": "^0.1.12",
+    "passport-google-oauth": "^2.0.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4",
+    "qs": "^6.9.6",
+    "swagger-jsdoc": "^6.0.1",
+    "swagger-ui-express": "^4.1.6",
+    "twitter": "^1.7.1",
+    "util": "^0.12.3",
+    "uuid": "^8.3.2"
+  }
+}

@@ -1,0 +1,24 @@
+name: area-build
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  docker-compose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: build-container
+        run: docker-compose build && docker-compose up -d
+      - name: check-running-containers
+        run: docker ps -a
+      - name: sleep
+        run: sleep 10
+      - name: curl-server
+        run: curl -X GET http://0.0.0.0:8080/about.json

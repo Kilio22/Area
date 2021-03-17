@@ -1,0 +1,56 @@
+version: "3"
+
+services:
+  server:
+    build: ./server
+    depends_on:
+      - db
+    environment:
+      - SERVER_PORT=8080
+      - CLIENT_WEB_PORT=8081
+      - MONGO_HOST=db
+      - MONGO_PORT=27017
+      - MONGO_USER=hein
+      - MONGO_PASSWORD=ilnesarreteplus
+      - MONGO_DEFAULT=area-prod
+    ports:
+      - "8080:8080"
+    networks:
+      - back-tier
+
+  client_mobile:
+    build: ./mobile
+    depends_on:
+      - server
+    volumes:
+      - common:/apk
+
+  client_web:
+    build: ./front
+    depends_on:
+      - server
+      - client_mobile
+    ports:
+      - "8081:8081"
+    volumes:
+      - common:/apk
+
+  db:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - db-data:/data/db
+    networks:
+      - back-tier
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=hein
+      - MONGO_INITDB_ROOT_PASSWORD=ilnesarreteplus
+    restart: unless-stopped
+
+networks:
+  back-tier:
+
+volumes:
+  common:
+  db-data:
